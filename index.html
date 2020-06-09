@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de Jogos</title>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- "Caixa" principal do app -->
+        <div id="main">
+            <!-- Cabeçalho onde encontram-se as caixas de texto e o botão -->
+            <div id="header">
+                <h2 id="tituloApp">Registro de Jogos</h2>
+                <input placeholder="Título" type="text" id="titulo" class="caixaTexto"></input>
+
+                <textarea id="texto" placeholder="Texto do lembrete" class="caixaTexto"></textarea>
+
+                <button id="gravar" onclick="gravarNota()">Gravar lembrete</button>
+                <button id="editar" onclick="editar()">Editar</button>
+                <button id="deletar" onclick="deletar()">deletar</button>
+                <button id="avaliar" onclick="avaliar()">Avaliar</button>
+            </div>
+
+            <!-- Conteúdo onde estarão os lembretes adicionados -->
+            <div id="content">
+                <!-- Item base usado como referência para criar novos itens -->
+                <div id="base-item" class="item-hide">
+                    <div class="item-title">
+                        Title
+                    </div>
+                    <div class="item-text">
+                        Text
+                    </div>
+                    <select id="cbodefinir" placeholder="Defina">
+                        <option value="0">Selecione a definição:</option>
+                        <option value="1">Quero jogar</option>
+                        <option value="2">Comprei para jogar</option>
+                        <option value="3"> Já joguei</option>
+                    </select>
+                    <div class="item-ava">
+                        Avaliação =
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Sobre">
+            <div id="Nomesobre">Felipe Jun Kumada BCC 1° Semestre
+            </div>
+        </div>
+    </body>
+</html>

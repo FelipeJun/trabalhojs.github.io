@@ -1,0 +1,138 @@
+/* Define a configuração do fundo */
+body {
+    /* Define a fonte */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Configura o fundo como um gradiente linear */
+    background: linear-gradient(90deg, #173e58 0%, #182848 100%);
+    /* Configura a cor do texto */
+    color: #444444;
+}
+
+/* Define a "caixa" principal da aplicação */
+#main {
+    /* Define a largura da caixa */
+    width: 600px;
+    /* Define uma margem para a caixa. A configuração auto
+        faz com que o elemento fique centralizado
+        horizontalmente */
+    margin: 20px auto;
+    /* Configura uma borda interna para o diálogo */
+    padding: 20px;
+    /* Configura a cor de fundo do diálogo */    
+    background-color: white;
+    /* Deixa a caixa com cantos arredondados */
+    border-radius: 10px;
+    /* Configura uma sombra para a caixa */
+    box-shadow: 0px 0 50px #333333;
+}
+
+/* Configura o título do app*/
+#tituloApp {
+    /* Alinha o título do app no meio da tela */
+    text-align: center;
+    /* Configura uma margem inferior para o título */
+    margin: 0 0 20px 0;
+}
+
+/* Estilo das caixas de texto */
+.caixaTexto {
+    /* Permite posicionar caixas de texto como divs */    
+    display: block;
+    /* Aumenta a largura das caixas de texto */
+    width: 90%;
+    /* Configura uma margem e centraliza as caixas de texto */
+    margin: 10px auto;
+}
+
+/* Estilo do botão gravar */
+#gravar {
+    /* Permite posicionar o botão como uma div */    
+    display: block;
+    /* Configura uma margem e centraliza o botão */
+    margin: 10px auto;
+}
+
+/* Configura um item de lista visível */
+.item-show {
+    /* Configura o tamanho lateral do item */
+    width: 95%;
+    /* Configura a margem do item e o centraliza */
+    margin: 10px auto;
+    /* Configura uma borda para o item */
+    border-radius: 5px;
+    /* Configura a sombra do item */
+    box-shadow: 0 0 10px gray;
+}
+
+/* Configura o item invisível (a base usada para clonagem) */
+.item-hide {
+    /* Faz com que o item base não seja mostrado */
+    display: none;    
+}
+
+/* Configura o título do item */
+.item-title {
+    /* Adiciona uma margem interna ao título */
+    padding: 10px;
+    /* Configura a fonte como negrito */
+    font-weight: bold;
+    /* Configura a cor do fundo do item */
+    background-color: #324b80;
+    /* Configura a cor do texto do item */
+    color: white;
+    /* Configura os cantos arredondados do item */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Configura o texto do item */
+.item-text {
+    /* Adiciona uma margem interna ao título */
+    padding: 10px;
+    /* Configura a cor do fundo do item */
+    background-color: #F5F5F6;
+    /* Configura a cor do texto do item */
+    color: black;
+    /* Configura os cantos arredondados do item */
+    border-radius: 0 0 5px 5px;
+}
+
+#Sobre{
+    position: fixed;
+    height: 100px;
+    width: 300px;
+    bottom: 30px;
+    right: 10px;
+}
+#Nomesobre{
+    position: absolute;
+    left: 120px;
+    height: 75px;
+    background-color: cyan;
+    color: white;
+    margin-top: 13px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+
+#cbodefinir{
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 35%;
+    max-width: 100%; /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    appearance: none;
+    background-color: #fff;
+}
+
+#base-item p{
+   margin: right;
+}
